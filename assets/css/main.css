@@ -1,0 +1,91 @@
+/* css */
+
+@font-face {
+    font-family: 'Default';
+    src: url('../fonts/LiberationSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Default';
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    box-shadow: 0px 2px 4px rgb(80, 0, 0);
+    padding-left:20px;
+    text-align:left;
+    color:white;
+    background-color: rgb(80, 0, 0);
+    position: absolute;
+    top: 0;
+
+
+}
+
+.header-icon {
+    height:100%;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+.background {
+    background-color: rgb(240, 240, 240);
+}
+
+.navbar-side {
+  margin: 20px 40px 0px 0px;
+  font-size: 23px;
+  text-align: right;
+  position: fixed;
+  right: 0;
+}
+
+ul.navbar-side-list{
+  list-style-type:none;
+  color:black;
+  li {
+      color:green;
+  }
+}
+
+ul.navbar-side-list li{
+    border-bottom: 1px solid #BDBDBD;
+}
+
+div.right {
+    float:right;
+    text-align:right;
+}
+
+div.left {
+    float:left;
+    text-align:left;
+}
+
+div.center {
+    float:center;
+    text-align:center;
+}
+
+.main {
+  margin:120px 0px 0px 20px;
+}
+
+.profile {
+  background-image: url("../images/jianer.jpg");
+  background-size:200px 272px;
+  background-repeat: no-repeat;
+  width: 200px;
+  height:200px;
+  border: 1px solid black;
+  border-radius: 300px;
+  margin: 45px 0px 0px 40px;
+}
