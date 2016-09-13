@@ -79,12 +79,43 @@ div.center {
   margin:120px 0px 0px 20px;
 }
 
+.content-header {
+  margin-top:40px;
+  color:white;
+  background-color:rgb(80, 0, 0);
+}
+
+.content>h1,h2,h3,h4,h5,p{
+  margin-left:40px;
+}
+
+.content >ul li {
+  margin-left:20px;
+}
+
+.jianer-nav {
+  padding-left:25px;
+  width:100%;
+  background-color: rgb(80, 0, 0);
+  color:white;
+  margin-bottom:20px;
+}
+
+.jianer-nav a {
+  color:white;
+  font-size:16px;
+}
+
+.jianer-nav a:hover {
+  color:rgb(80, 0, 0);
+}
+
 .profile {
   background-image: url("../images/jianer.jpg");
-  background-size:200px 272px;
+  background-size:235px 320px;
   background-repeat: no-repeat;
-  width: 200px;
-  height:200px;
+  width: 235px;
+  height:235px;
   border: 1px solid black;
   border-radius: 300px;
   margin: 45px 0px 0px 40px;
