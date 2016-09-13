@@ -4,18 +4,19 @@
     <!-- scripts -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Will's Skelly</title>
+    <title>Jianer Chen</title>
     <!-- styles -->
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
   </head>
   <body class="background">
-      <span class="header">
+      <span id="homeSection" class="header">
           <h1>JIANER CHEN</h1>
           <p style="margin-left:0px">
               Texas A&M University
@@ -88,7 +89,7 @@
                 START RESEARCH PROFILE
 
                 -->
-                <div class="row content">
+                <div id="researchSection" class="row content">
                   <div class="content-header">
                      <h3>Research Profiles</h3>
                   </div>
@@ -98,28 +99,175 @@
 
                   <nav >
                     <ul class="nav navbar-nav jianer-nav">
-                      <li><a>Research Interests</a></li>
-                      <li><a>Research Support</a></li>
-                      <li><a>Awards</a></li>
-                      <li><a>Experience</a></li>
-                      <li><a>Professional</a></li>
-                      <li><a>Selected Publications</a></li>
+                      <li><a onclick="showResearch('1')">Research Interests</a></li>
+                      <li><a onclick="showResearch('2')">Research Support</a></li>
+                      <li><a onclick="showResearch('3')">Awards</a></li>
+                      <li><a onclick="showResearch('4')">Experience</a></li>
+                      <li><a onclick="showResearch('5')">Professional</a></li>
+                      <li><a onclick="showResearch('6')">Selected Publications</a></li>
                     </ul>
                   </nav>
 
-                  <p>
-                    Jianer Chen's main research is centered on computer algorithms and their applications. His current research projects include exact and parameterized algorithms, computer graphics, computer networks, and computational biology.<br />
+                  <div id="section1">
+                      <p><b><span lang="EN-US" style="color:maroon">RESEARCH INTERESTS
+                      </span><span lang="EN-US"> </span></b></p>
+                      <p>
+                        Jianer Chen's main research is centered on computer algorithms and their applications. His current research projects include exact and parameterized algorithms, computer graphics, computer networks, and computational biology.
+                      </p>
+                      <p>
+                        In his research in <b>algorithms</b>, Jianer Chen is most interested
+                        in efficient and effective algorithms for hard optimization
+                        problems and their intrinsic complexity. In <b>computer graphics</b>,
+                        he is working on topologically robust graphics modeling systems.
+                        In <b>computer networks</b>, his main interest is in routing algorithms
+                        and fault tolerance for computer networks and sensor networks.
+                        In <b>computational biology</b>, his focus is on biological sequence
+                        analysis and biological network analysis. </p>
 
-                    In his research in algorithms, Jianer Chen is most interested in efficient and effective algorithms for hard optimization problems and their intrinsic complexity. In computer graphics, he is working on topologically robust graphics modeling systems. In computer networks, his main interest is in routing algorithms and fault tolerance for computer networks and sensor networks. In computational biology, his focus is on biological sequence analysis and biological network analysis.<br />
+                    <p>
+                        Jianer Chen's research has been supported by the National Science Foundation.<br />
+                    </p>
+                  </div>
 
-                    Jianer Chen's research has been supported by the National Science Foundation.<br />
+                  <div id="section2" style="display:none">
+                      <p><b><span lang="EN-US" style="color:maroon">RESEARCH SUPPORT
+                      </span><span lang="EN-US"> </span></b></p>
+                      <ul>
+                        <li><b>Texas Higher Education Coordinating Board (Advanced Research
+                           Program)</b>,
+                           "<i>Secure Aggregation for large-Scale Wireless Sensor Networks</i>,"
+                           2006-2008.
+                        </li><li><b>National Science Foundation</b>,
+                           "<i>Computational Upper and Lower Bounds via Parameterized Complexity</i>,"
+                           2004-2007.
+                        </li><li><b>National Science Foundation</b>,
+                           "<i>Exact Computational Biology Algorithms with Small Parameters</i>,"
+                           2003-2006.
+                        </li><li><b>National Science Foundation</b>,
+                           "<i>Parameterized Computation and Applications</i>,"
+                           2000-2003.
+                        </li><li><b>National Science Foundation</b>,
+                           "<i>Computational Optimization in Collaboration with Mexican Researchers</i>,"
+                           1997-2000.
+                        </li><li><b>National Science Foundation</b>,
+                           "<i>Applications of Topology to Algorithm Design</i>," Research Initiation Awards,
+                           1991-1994.
+                        </li><li><b>Millennium Technologies, Inc.</b>,
+                           "<i>Test and Analysis of Software Timing Properties</i>,"
+                           1997-1999.
+                        </li></ul>
+                  </div>
 
-                  </p>
+                  <div id="section3" style="display:none">
+                      <p><b><span lang="EN-US" style="color:maroon">AWARDS
+                      </span><span lang="EN-US"> </span></b></p>
+                      <ul>
+                          <li><b>AFS Distinguished Faculty Achievement Award</b>
+                              (university level), Texas A&amp;M University, 2007;
+                          </li><li><b>AFS Distinguished Faculty Achievement Award</b>
+                              (college level), Texas A&amp;M University, 2006;
+                          </li><li><b>E.D. Brockett Professorship Award,</b>
+                              College of Engineering, Texas A&amp;M University, 2005;
+                          </li><li><b>Eugene E. Webb'43 Faculty Fellow,</b>
+                              College of Engineering, Texas A&amp;M University, 2003;
+                          </li><li><b>Graduate Teaching Excellence Awards,</b>
+                              Dept. Computer Science, Texas A&amp;M University, 2002, 2003, 2005;
+                          </li><li><b> AFS Distinguished Faculty Achievement Award</b>
+                              (college level), Texas A&amp;M University, 1998;
+                          </li><li><b> Amoco Faculty Award for Teaching Excellence,</b>
+                              Texas A&amp;M University, 1998;
+                          </li><li><b> TEES Select Young Faculty Award,</b>
+                              Texas A&amp;M University, 1993;
+                          </li><li><b> Research Initiation Award,</b>
+                              The National Science Foundation, 1991;
+                          </li><li><b> Janet Fabri Award, </b> for the Best Ph.D. Dissertation,
+                              New York University, 1988;
+                          </li><li><b> First Place, </b> in Province-Wide Mathematics Competition,
+                              Hunan, P.R. China, 1980.<br>
+                          </li></ul>
+                  </div>
+
+
+                  <div id="section4" style="display:none">
+                      <p><b><span lang="EN-US" style="color:maroon">EXPERIENCE
+                      </span><span lang="EN-US"> </span></b></p>
+                      <ul>
+                          <li><b>Professor,</b> Computer Science Department,
+                             Texas A&amp;M University, 2002.
+                          </li><li><b>Associate Professor,</b> Computer Science Department,
+                             Texas A&amp;M University, 1996.
+                          </li><li><b>Assistant Professor,</b> Computer Science Department,
+                             Texas A&amp;M University, 1990.
+                          </li></ul>
+                  </div>
+
+                  <div id="section5" style="display:none">
+                      <p><b><span lang="EN-US" style="color:maroon">PROFESSIONAL
+                      </span><span lang="EN-US"> </span></b></p>
+                      <ul>
+                      <li><b>Associate Editor</b>, <i>Journal of Computational
+                          Intelligence in Bioinformatics</i>
+                      </li><li><b>Guest Editor</b>, Special Issue on Exact and Parameterized
+                          Computation, <i>Algorithmica</i>, 2007
+                      </li><li><b>Guest Editor</b>, Special Issue on Discrete Mathematics and
+                          Theoretical Computer Science, <i>Discrete Applied Mathematics</i>,
+                          2004
+                      </li><li><b>Guest Editor</b>, Special Issue on Parameterized Computation
+                          and Complexity, <i>Journal of Computer and System Sciences</i>,
+                          2003
+                      </li><li><b>Steering Committee Member</b>, <i>The International Workshop on
+                          Parameterized and Exact Computation</i> (IWPEC)
+                      </li><li><b>Program Committee Member</b>, <i>The 3rd International Conference
+                          on Algorithmic Aspects in Information and Management</i>
+                          (AAIM 2007), Portland, USA, June 6-8, 2007
+                      </li><li><b>Program committee Member</b>, <i>The 32nd International
+                          Workshop on Graph-Theoretical Concepts in Computer Science</i>
+                          (WG 2006), Bergen, Norway, June 22-24, 2006
+                      </li><li><b>Program Committee Member</b>, <i>The 16th Annual International
+                          Symposium on Algorithms and Computation</i> (ISAAC 05),
+                          Hainan, China, December 20-22, 2005
+                      </li><li><b>Program Committee Member</b>, <i>The 6th IEEE International
+                          Conference on Algorithms and Architecture for Parallel
+                          Processing</i> (ICA3PP'2005), Melbourne, Australia, June 19-22, 2005
+                      </li><li><b>Member</b>: ACM, IEEE, SIAM
+                      </li></ul>
+                  </div>
+
+                  <div id="section6" style="display:none">
+                      <p><b><span lang="EN-US" style="color:maroon">SELECTED PUBLICATIONS
+                      </span><span lang="EN-US"> </span></b></p>
+                      <ul>
+                        <li>"Parametric Duality and Kernelization:
+                             Lower Bounds and Upper Bounds on Kernel Size,"
+                             <i>SIAM Journal on Computing</i>, accepted
+                             (with H. Fernau, I. Kanj, and G. Xia).
+                        </li><li>"Genus Characterizes the Complexity of Certain Graph Problems:
+                             Some Tight Results,"
+                             <i>Journal of Computer and System Sciences</i>,
+                             accepted (a preliminary version appeared in
+                             <i>Proc. 30th International Colloquium on Automata, Languages,
+                             and Programming</i> (ICALP'03), Lecture Notes in Computer Science
+                             2719, pp. 845-856, 2003, with I.A. Kanj, L. Perkovic,
+                             E. Sedgwick, and G. Xia).
+                        </li><li>"Separability and Topology Control of Quasi Unit Disk Graphs,"
+                             <i>Proc. 26th Annual IEEE Conference on Computer Communications</i>
+                             (IEEE INFOCOM 2007), pp. 2225-2233, 2007 (with A. Jiang, I. Kanj,
+                             G. Xia, and F. Zhang).
+                        </li><li>"Improved Algorithms for Path, Matching, and Packing Problems,"
+                             <i>Proc. 18th ACM-SIAM Symposium on Discrete Algorithms</i>
+                             (SODA 2007), pp. 298-307, 2007 (with S. Lu, S.-H. Sze, and F. Zhang).
+                        </li><li>"Strong computational lower bounds via parameterized complexity,"
+                            <i>Journal of Computer and System Sciences 72</i>, pp. 1346-1367,
+                            2006 (a preliminary version appeared in <i>Proc. 36th ACM Symposium
+                            on Theory of Computing</i> (STOC'04), pp. 212-221, 2004, with
+                            X. Huang, I.A. Kanj and G. Xia).
+                        </li></ul>
+                  </div>
                 </div>
 
                 <!-- CURRICULUM VITAE -->
 
-                <div class="row content">
+                <div id="cvSection" class="row content">
                   <div class="content-header">
                      <h3>Curriculum Vitae</h3>
                   </div>
@@ -361,13 +509,63 @@
                   <!-- Curriculum Vitae -->
                 </div>
 
-                <div class="row content">
+                <!--
+                INTERESTINGLINKS
+            -->
+
+                <div id="linkSection" class="row content">
                   <div class="content-header">
                      <h3>Interesting Links</h3>
                   </div>
+                  <p><b><span lang="EN-US" style="color:maroon">THEORETICAL COMPUTER SCIENCE
+                  </span><span lang="EN-US"> </span></b></p>
+                    <ul>
+                    <li> <a href="http://www.acm.org/">Association for Computing Machinery
+                            (ACM)</a>
+                    </li><li> <a href="http://www.siam.org/">Society of Industrial and Applied
+                            Mathematics (SIAM)</a>
+                    </li><li> <a href="http://www.ieee.org/">Institute of Electrical and Electronic
+                            Engineers (IEEE)</a>
+                    </li><li> <a href="http://theory.lcs.mit.edu/%7Edmjones/hbp/">Journal of ACM
+                            (JACM)</a>
+                    </li><li> <a href="http://www.siam.org/journals/sicomp/sicomp.htm">
+                            SIAM Journal on Computing (SICOMP)</a>
+                    </li><li> <a href="http://www.academicpress.com/jcss">
+                            Journal of Computer and System Sciences (JCSS)</a>
+                    </li><li> <a href="http://theory.lcs.mit.edu/%7Edmjones/hbp/">Information and
+                          Computation (I&amp;C)</a>
+                    </li><li> <a href="http://www.elsevier.nl/locate/tcs">Theoretical Computer
+                            Science (TCS)</a>
+                    </li><li> <a href="http://www.siam.org/journals/sidma/sidma.htm">
+                            SIAM Journal on Discrete Mathematics (SIDMA)</a>
+                    </li><li> <a href="http://www.elsevier.nl/locate/ipl">Information Processing
+                            Letters (IPL)</a>
+                    </li><li> <a href="http://www.eccc.uni-trier.de/eccc/">
+                            Colloquium on Computational Complexity</a>
+                    </li><li> <a href="http://www.cs.mun.ca/~harold/W_hier/W_hier.html">
+                            Fixed-Parameter Tractability</a>
+                    </li><li> <a href="http://sigact.acm.org/tcs-rolodex">Theoretical
+                            Computer Scientists</a>
+                    </li></ul>
+
+                    <p><b><span lang="EN-US" style="color:maroon">CONNECTIONS TO CHINA
+                    </span><span lang="EN-US"> </span></b></p>
+                    <ul>
+                    <li> <a href="http://www.csu.edu.cn">Center-South University of Technology</a>
+                    </li><li> <a href="http://www.xjtu.edu.cn">Xi'An JiaoTong University</a>
+                    </li><li> <a href="http://www.cs.ust.hk">HongKong University of Science
+                              and Technology</a>
+                    </li><li> <a href="http://www.cs.cuhk.hk">Chinese University of Hong Kong</a>
+                    </li><li> <a href="http://www.cs.hku.hk">University of Hong Kong</a>
+                    </li></ul>
+
                 </div>
 
             </div>
+
+            <!--
+            END INTERESTING LINKS
+            -->
 
             <!--
             SCROLLABLE SECTION ENDS
@@ -380,11 +578,11 @@
             <div class="col-md-3">
                 <div class="navbar-side">
                     <ul class="navbar-side-list">
-                      <li>HOME</li>
-                      <li>RESEARCH PROFILES</li>
-                      <li>CURRICULUM VITAE</li>
-                      <li>MANUSCRIPTS</li>
-                      <li>LINKS</li>
+                      <li><a onclick="goToSection('homeSection')">HOME</a></li>
+                      <li><a onclick="goToSection('researchSection')">RESEARCH PROFILES</a></li>
+                      <li><a onclick="goToSection('cvSection')">CURRICULUM VITAE</a></li>
+                      <li><a onclick="goToSection('linkSection')">LINKS</a></li>
+                      <li><a href="http://engineering.tamu.edu/cse/people/faculty">FACULTY PAGE</a></li>
                     </ul>
                 </div>
             </div>
